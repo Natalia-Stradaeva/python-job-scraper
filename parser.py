@@ -10,7 +10,8 @@ HEADERS = {
 # --- CONFIGURAZIONE DEI FILTRI (Parametri stabiliti) ---
 MIN_SALARY = 1200  # Stipendio minimo netto mensile 
 ALLOWED_LOCATION_TYPES = ["remoto", "ibrido", "smart working", "campania", "lazio", "roma"]
-STOP_WORDS = ["stage", "tirocinio", "rimborso spese", "apprendistato", "senior", "lead", "manager"]
+STOP_WORDS = ["stage", "tirocinio", "rimborso spese", "apprendistato", "senior", "lead", "manager", 
+              "skip to", "sign in", "ai-powered", "resume builder", "cookie", "privacy"]git add 
 KEYWORDS = ["python", "sql", "docker", "cloud", "ai", "machine learning", "distributed systems"]
 
 # --- LISTA DEI SITI WEB TARGET PER IL LAVORO ---
