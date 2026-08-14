@@ -11,7 +11,7 @@ HEADERS = {
 MIN_SALARY = 1200  # Stipendio minimo netto mensile 
 ALLOWED_LOCATION_TYPES = ["remoto", "ibrido", "smart working", "campania", "lazio", "roma"]
 STOP_WORDS = ["stage", "tirocinio", "rimborso spese", "apprendistato", "senior", "lead", "manager", 
-              "skip to", "sign in", "ai-powered", "resume builder", "cookie", "privacy"]git add 
+              "skip to", "sign in", "ai-powered", "resume builder", "cookie", "privacy"] 
 KEYWORDS = ["python", "sql", "docker", "cloud", "ai", "machine learning", "distributed systems"]
 
 # --- LISTA DEI SITI WEB TARGET PER IL LAVORO ---
@@ -48,23 +48,61 @@ for site_name, site_url in JOB_SITES.items():
         if response.status_code == 200:
             soup = BeautifulSoup(response.text, 'html.parser')
             
-            # Cerchiamo tutti i possibili tag che contengono testi di offerte
-            job_elements = soup.find_all(['h2', 'h3', 'a', 'p'])
+            # Cerchiamo tutti i tag 'a' (link) che contengono i titoli
+            job_elements = soup.find_all('a', href=True)
             
             site_matches = 0
             for element in job_elements:
                 job_text = element.get_text().strip().lower()
+                job_url = element['href']
+                
+                # Если ссылка относительная (начинается с /), делаем ее абсолютной, привязывая к сайту
+                if job_url.startswith('/'):
+                    # Извлекаем базовый домен (например, https://lavoro.regione.campania.it)
+                    from urllib.parse import urlparse
+                    parsed_url = urlparse(site_url)
+                    base_domain = f"{parsed_url.scheme}://{parsed_url.netloc}"
+                    job_url = base_domain + job_url
                 
                 # Controlliamo le parole chiave e le stop-words
                 has_keyword = any(kw in job_text for kw in KEYWORDS)
                 has_stop_word = any(sw in job_text for sw in STOP_WORDS)
                 
                 if has_keyword and not has_stop_word and 15 < len(job_text) < 150:
-                    if job_text not in all_found_jobs:
-                        all_found_jobs.append(f"[{site_name.upper()}] {element.get_text().strip()}")
+                    
+                    job_title = element.get_text().strip()
+                    
+                    # Находим родительский блок (контейнер HTML), где живет эта ссылка
+                    # Обычно там содержится весь текст карточки вакансии (город, компания и т.д.)
+                    parent_element = element.find_parent(['div', 'li', 'article'])
+                    parent_text = parent_element.get_text().strip().lower() if parent_element else job_text
+                    
+                    # 1. Ищем локацию уже по ВСЕМУ тексту карточки (родителя)
+                    found_location = "Non specificata (controlla il link)"
+                    for loc in PREFERRED_LOCATIONS:
+                        if loc in parent_text:
+                            found_location = loc.capitalize()
+                            break
+                    
+                    # 2. Ищем информацию о зарплате в тексте карточки
+                    salary_info = "Non specificata / Da concordare"
+                    if "€" in parent_text or "ral" in parent_text or "stipendio" in parent_text or "k" in parent_text or "netti" in parent_text:
+                        salary_info = "Indicata nel testo (apri il link per i dettagli)"
+                    
+                    # 3. Собираем структурированную карточку
+                    formatted_entry = (
+                        f"📌 [Sito: {site_name.upper()}]\n"
+                        f"   • Posizione: {job_title}\n"
+                        f"   • Luogo: {found_location}\n"
+                        f"   • Stipendio: {salary_info}\n"
+                        f"   • Link per candidarsi: {job_url}\n"
+                    )
+                    
+                    if formatted_entry not in all_found_jobs:
+                        all_found_jobs.append(formatted_entry)
                         site_matches += 1
             
-            print(f"[{site_name}] Trovati {site_matches} potenziali match.")
+            print(f"[{site_name}] Trovate {site_matches} offerte strutturate.")
             
         else:
             print(f"[{site_name}] Attenzione: errore di connessione (Codice: {response.status_code})")

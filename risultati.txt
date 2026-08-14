@@ -1,72 +1,93 @@
-Trovate 35 offerte potenziali:
+Trovate 13 offerte potenziali:
 
-[REGIONE_CAMPANIA] Incentivi Caivano
+📌 [Sito: REGIONE_CAMPANIA]
+   • Posizione: Incentivi Caivano
+   • Luogo: Non specificata (controlla il link)
+   • Stipendio: Non specificata / Da concordare
+   • Link per candidarsi: https://lavoro.regione.campania.it/index.php/home/lavoro1/lavoro/incentivi-caivano
+
 ---
-[REGIONE_CAMPANIA] Vai all’archivio
+📌 [Sito: REGIONE_CAMPANIA]
+   • Posizione: Vai all’archivio
+   • Luogo: Non specificata (controlla il link)
+   • Stipendio: Non specificata / Da concordare
+   • Link per candidarsi: https://lavoro.regione.campania.it/index.php/home/archive-articles
+
 ---
-[LINKEDIN_ITALIA] Skip to main content
+📌 [Sito: LINKEDIN_ITALIA]
+   • Posizione: Software Engineer AI
+   • Luogo: Campania
+   • Stipendio: Indicata nel testo (apri il link per i dettagli)
+   • Link per candidarsi: https://it.linkedin.com/jobs/view/software-engineer-ai-at-capgemini-engineering-4450698633?position=1&pageNum=0&refId=hqeOGcTh7p6UyDS3M%2FGPgw%3D%3D&trackingId=WYCrM2cnfdeX%2B5e7a9kzZg%3D%3D
+
 ---
-[LINKEDIN_ITALIA] You're now using AI-powered job search
+📌 [Sito: LINKEDIN_ITALIA]
+   • Posizione: AI Engineer | GenAI & LLM
+   • Luogo: Campania
+   • Stipendio: Indicata nel testo (apri il link per i dettagli)
+   • Link per candidarsi: https://it.linkedin.com/jobs/view/ai-engineer-genai-llm-at-lutech-4447996830?position=4&pageNum=0&refId=hqeOGcTh7p6UyDS3M%2FGPgw%3D%3D&trackingId=hhbHOBOtRY%2Fv%2F2jeT9919w%3D%3D
+
 ---
-[LINKEDIN_ITALIA] Sign in to set job alerts for “Python Junior” roles.
+📌 [Sito: LINKEDIN_ITALIA]
+   • Posizione: Agentic AI / LLM Developer
+   • Luogo: Campania
+   • Stipendio: Non specificata / Da concordare
+   • Link per candidarsi: https://it.linkedin.com/jobs/view/agentic-ai-llm-developer-at-capgemini-engineering-4417726878?position=8&pageNum=0&refId=hqeOGcTh7p6UyDS3M%2FGPgw%3D%3D&trackingId=f3JIAcvQwFb%2FYUI56%2FYDZA%3D%3D
+
 ---
-[LINKEDIN_ITALIA] Software Engineer AI
+📌 [Sito: LINKEDIN_ITALIA]
+   • Posizione: AI Enterprise Junior Architect
+   • Luogo: Campania
+   • Stipendio: Non specificata / Da concordare
+   • Link per candidarsi: https://it.linkedin.com/jobs/view/ai-enterprise-junior-architect-at-msc-cruises-4433886255?position=14&pageNum=0&refId=hqeOGcTh7p6UyDS3M%2FGPgw%3D%3D&trackingId=WUt7wbDfNpTCZ4n3a5Q%2BZA%3D%3D
+
 ---
-[LINKEDIN_ITALIA] Software Engineer AI
+📌 [Sito: LINKEDIN_ITALIA]
+   • Posizione: Junior ServiceNow Developer - Application Maintenance
+   • Luogo: Campania
+   • Stipendio: Indicata nel testo (apri il link per i dettagli)
+   • Link per candidarsi: https://it.linkedin.com/jobs/view/junior-servicenow-developer-application-maintenance-at-kpmg-italy-4450332549?position=18&pageNum=0&refId=hqeOGcTh7p6UyDS3M%2FGPgw%3D%3D&trackingId=m3KenLGSb4KvPjY6pQVrfg%3D%3D
+
 ---
-[LINKEDIN_ITALIA] AI Engineer | GenAI & LLM
+📌 [Sito: LINKEDIN_ITALIA]
+   • Posizione: Programmatore Plsql
+   • Luogo: Campania
+   • Stipendio: Non specificata / Da concordare
+   • Link per candidarsi: https://it.linkedin.com/jobs/view/programmatore-plsql-at-penta-soluzioni-informatiche-s-r-l-4354692878?position=23&pageNum=0&refId=hqeOGcTh7p6UyDS3M%2FGPgw%3D%3D&trackingId=wEKZBMho7kHl%2BAQec6E8DQ%3D%3D
+
 ---
-[LINKEDIN_ITALIA] AI Engineer | GenAI & LLM
+📌 [Sito: LINKEDIN_ITALIA]
+   • Posizione: Programatore PL/SQL
+   • Luogo: Campania
+   • Stipendio: Non specificata / Da concordare
+   • Link per candidarsi: https://it.linkedin.com/jobs/view/programatore-pl-sql-at-penta-soluzioni-informatiche-s-r-l-4354608857?position=26&pageNum=0&refId=hqeOGcTh7p6UyDS3M%2FGPgw%3D%3D&trackingId=4g2d3EBmCnDTpP2viWfIUg%3D%3D
+
 ---
-[LINKEDIN_ITALIA] Agentic AI / LLM Developer
+📌 [Sito: LINKEDIN_ITALIA]
+   • Posizione: Cloud Enterprise Junior Architect
+   • Luogo: Campania
+   • Stipendio: Indicata nel testo (apri il link per i dettagli)
+   • Link per candidarsi: https://it.linkedin.com/jobs/view/cloud-enterprise-junior-architect-at-msc-cruises-4432807747?position=37&pageNum=0&refId=hqeOGcTh7p6UyDS3M%2FGPgw%3D%3D&trackingId=VPzhKYS7arZh3B7sw%2FM2DQ%3D%3D
+
 ---
-[LINKEDIN_ITALIA] Agentic AI / LLM Developer
+📌 [Sito: REMOTEOK]
+   • Posizione: Hire Python developers
+   • Luogo: Non specificata (controlla il link)
+   • Stipendio: Non specificata / Da concordare
+   • Link per candidarsi: https://www.toptal.com/developers/python
+
 ---
-[LINKEDIN_ITALIA] DATA ANALYST E AI SPECIALIST
+📌 [Sito: REMOTEOK]
+   • Posizione: hire Python developers
+   • Luogo: Non specificata (controlla il link)
+   • Stipendio: Indicata nel testo (apri il link per i dettagli)
+   • Link per candidarsi: https://www.toptal.com/developers/python
+
 ---
-[LINKEDIN_ITALIA] DATA ANALYST E AI SPECIALIST
----
-[LINKEDIN_ITALIA] AI Enterprise Junior Architect
----
-[LINKEDIN_ITALIA] AI Enterprise Junior Architect
----
-[LINKEDIN_ITALIA] Junior ServiceNow Developer - Application Maintenance
----
-[LINKEDIN_ITALIA] Junior ServiceNow Developer - Application Maintenance
----
-[LINKEDIN_ITALIA] AI & Data intelligence Research Engineer
----
-[LINKEDIN_ITALIA] AI & Data intelligence Research Engineer
----
-[LINKEDIN_ITALIA] Programmatore Plsql
----
-[LINKEDIN_ITALIA] Programmatore Plsql
----
-[LINKEDIN_ITALIA] Programatore PL/SQL
----
-[LINKEDIN_ITALIA] Programatore PL/SQL
----
-[LINKEDIN_ITALIA] Cloud Enterprise Junior Architect
----
-[LINKEDIN_ITALIA] Cloud Enterprise Junior Architect
----
-[TALENT_ITALIA] Python • campania
----
-[REMOTEOK] Hire Python developers
----
-[REMOTEOK] hire Python developers
----
-[WEWORKREMOTELY] Win more remote jobs with the World’s #1 AI Resume Builder
----
-[WEWORKREMOTELY] Python Backend Development Talent with RAG and Agentic AI Experience 1d  Toptal Featured Top 100  Full-Time  Asia Only
----
-[WEWORKREMOTELY] Python Backend Development Talent with RAG and Agentic AI Experience
----
-[WEWORKREMOTELY] Remote Talent Cloud
----
-[WEWORKREMOTELY] DevOps Engineer (Python)
----
-[WEWORKREMOTELY] Metana's partner companies are hiring AI, Web3, Software & Security talent right now.
----
-[WEWORKREMOTELY] Full-Stack Engineer (Python + Temporal) | Remote | LATAM & Europe
+📌 [Sito: WEWORKREMOTELY]
+   • Posizione: Python Backend Development Talent with RAG and Agentic AI Experience 2d  Toptal Featured Top 100  Full-Time  Asia Only
+   • Luogo: Non specificata (controlla il link)
+   • Stipendio: Indicata nel testo (apri il link per i dettagli)
+   • Link per candidarsi: https://weworkremotely.com/remote-jobs/toptal-python-backend-development-talent-with-rag-and-agentic-ai-experience
+
 ---
