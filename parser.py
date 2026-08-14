@@ -2,30 +2,54 @@
 import requests
 from bs4 import BeautifulSoup
 
-# L'indirizzo del sito Web che vogliamo analizzare (usiamo un sito di prova sicuro)
-url = 'https://quotes.toscrape.com/'
+# --- CONFIGURAZIONE DEI FILTRI (Parametri stabiliti) ---
+MIN_SALARY = 1200  # Stipendio minimo netto mensile 
+ALLOWED_LOCATION_TYPES = ["remoto", "ibrido", "smart working", "campania", "lazio", "roma"]
+STOP_WORDS = ["stage", "tirocinio", "rimborso spese", "apprendistato"]
+KEYWORDS = ["python", "sql", "docker", "cloud", "ai", "machine learning", "distributed systems"]
 
-print("Scaricamento della pagina in corso...")
-# Scarichiamo il codice HTML della pagina
-response = requests.get(url)
+# --- LISTA DEI SITI WEB TARGET PER IL LAVORO ---
+# Elenco completo delle piattaforme: regionali, italiane, europee e globali
+JOB_SITES = {
+    "regione_campania": "https://lavoro.regione.campania.it",
+    "indeed_italia": "https://it.indeed.com/jobs?q=python+junior&l=Campania",
+    "subito_lavoro": "https://www.subito.it/annunci-campania/offerta-lavoro/napoli/napoli/python",
+    "linkedin_italia": "https://www.linkedin.com/jobs/search/?keywords=Python%20Junior&location=Campania%2C%20Italia",
+    "infojobs": "https://www.infojobs.it/lavoro-python-junior.isc",
+    "glassdoor": "https://www.glassdoor.it/Lavoro/italia-junior-python-developer-lavoro-SRCH_KO0,25_IL.9,15_IN216.htm",
+    "talent_italia": "https://it.talent.com/jobs?k=python&l=campania",
+    "monster_italia": "https://www.monster.it/lavoro/ricerca/?q=python&where=campania",
+    "wellfound": "https://wellfound.com/role/l/python-engineer",
+    "remoteok": "https://remoteok.com/remote-python-jobs",
+    "weworkremotely": "https://weworkremotely.com/remote-jobs/search?term=python",
+    "startup_jobs": "https://startup.jobs/remote-python-developer-jobs"
+}
 
-# Controlliamo se la connessione è riuscita (il codice 200 significa OK)
-if response.status_code == 200:
-    print("Pagina scaricata con successo! Estrazione dei dati...")
+# Località accettabili per ufficio (vicino a Villa Literna: Aversa, Caserta, Napoli, Roma)
+PREFERRED_LOCATIONS = ["napoli", "caserta", "aversa", "roma", "campania", "lazio", "remoto", "smart working"]
+
+# --- LOGICA DEL PARSER PER LE OFFERTE DI LAVORO ---
+# Iteriamo (passiamo in rassegna) tutti i siti presenti nel nostro dizionario JOB_SITES
+for site_name, site_url in JOB_SITES.items():
+    print(f"\nAnalisi del sito: {site_name.upper()} ({site_url})")
     
-    # Analizziamo l'HTML della pagina
-    soup = BeautifulSoup(response.text, 'html.parser')
-    
-    # Troviamo tutte le citazioni presenti nella pagina
-    quotes = soup.find_all('span', class_='text')
-    
-    # Apriamo un file di testo in scrittura e salviamo i risultati
-    with open('risultati.txt', 'w', encoding='utf-8') as f:
-        for i, quote in enumerate(quotes, 1):
-            text = f"{i}. {quote.text}\n"
-            f.write(text)
-            print(text.strip())
+    try:
+        # Inviamo una richiesta HTTP al sito
+        response = requests.get(site_url, timeout=10)
+        
+        # Controlliamo se la connessione è riuscita
+        if response.status_code == 200:
+            print(f"[{site_name}] Pagina scaricata con successo! Analisi in corso...")
             
-    print("\nFatto! I dati sono stati salvati nel file 'risultati.txt'.")
-else:
-    print(f"Errore durante il download della pagina: {response.status_code}")
+            # Analizziamo l'HTML con BeautifulSoup
+            soup = BeautifulSoup(response.text, 'html.parser')
+            
+            # [Qui nei prossimi passaggi aggiungeremo la ricerca specifica delle offerte]
+            
+        else:
+            print(f"[{site_name}] Attenzione: errore di connessione (Codice: {response.status_code})")
+            
+    except Exception as e:
+        print(f"[{site_name}] Si è verificato un errore durante la connessione: {e}")
+
+print("\nFatto! Scansione dei siti completata.")
